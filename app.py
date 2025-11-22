@@ -19,6 +19,7 @@ def load_data():
     return df
 
 app = Dash(__name__)
+server = app.server   # ← VERY IMPORTANT (Render ke liye)
 app.layout = html.Div([
     html.H1("Buy / Sell 1-Min Aggregation Dashboard"),
 
@@ -68,3 +69,4 @@ def update(n):
 
 if __name__ == "__main__":
     app.run(debug=True)
+
