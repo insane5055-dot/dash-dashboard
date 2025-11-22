@@ -1,8 +1,11 @@
 dash
+dash-bootstrap-components
 plotly
 pandas
-websocket-client
+requests
+sqlalchemy
+psycopg2-binary
 python-dateutil
 gunicorn
-
-
+websocket-client
+python-dotenv
